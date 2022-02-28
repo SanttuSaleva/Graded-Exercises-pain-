@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idiot Medicine Store</title>
+</head>
+<body onload="start()" >
+    <header id="title">Medicine for Madmen Store</header>
+    <div id="items"></div>
+
+    <script>
+        const items = [
+            {
+                name: 'Mad Cap Mushroom',
+                price: 100,
+                image: "https://image.shutterstock.com/image-vector/agaricus-campestris-all-elements-separate-600w-403997965.jpg"
+
+            },
+            {
+                name: 'LSD',
+                price: 500,
+                image: "https://image.shutterstock.com/image-photo/psychedelic-drug-lsd-therapy-research-600w-1775700806.jpg"
+
+            },
+            {
+                name: 'Penicillin',
+                price: 55,
+                image: "https://image.shutterstock.com/image-photo/new-york-usa-april-18-600w-1958065291.jpg",
+
+            },
+            {
+                name: 'Ketamine',
+                price: 1000,
+                image: "https://image.shutterstock.com/image-photo/vial-vaccine-drug-powder-on-600w-1524354695.jpg"
+
+            },
+            {
+                name: 'Paracetamol',
+                price: 500,
+                image: "https://image.shutterstock.com/image-photo/paracetamol-known-acetaminophen-pill-medication-600w-1839229021.jpg",
+
+            },
+            {
+                name: 'Mysterious Medicine',
+                price: 10,
+                image: "https://image.shutterstock.com/image-photo/group-pills-hand-medicine-concept-600w-1926317507.jpg"
+
+            },
+            {
+                name: 'Even More Mysterious Medicine',
+                price: 11,
+                image: "https://image.shutterstock.com/image-photo/colorful-pills-medicines-hand-600w-672632047.jpg"
+
+            },
+            {
+                name: 'Tears of Coding Students',
+                price: 15,
+                image: "https://image.shutterstock.com/image-vector/realistic-water-drops-3d-transparent-600w-1341327572.jpg"
+            },
+            {
+                name:'Simple English, with a dash of thoughts',
+                price: 0,
+                image: "https://image.shutterstock.com/image-vector/english-open-book-language-hand-600w-1191427996.jpg"
+            }
+        ]
+
+        function start(){
+            let firstPage = document.getElementById("content");
+            frontPage.innerHTML = "";
+
+            for(let i = 0; i < items.length; i++) {
+                
+                let allItems = document.createElement("div");
+                allItems.className = "item";
+                allItems.innerHTML = `<div>
+                    <h1>${items[i].name}</h1>
+                    <img src="${items[i].image}"/>
+                    <div>${items[i].price}</div>
+            </div> `
+            allItems.onClick = () => detailView(items[i]);
+            firstPage.appendChild(allItems);
+            }
+        }
+
+        function detailView(item){
+            let detailedView = document.getElementById("content");
+            detailedView.innerHTML = "";
+            for(let i = 0; i < items.length; i++) {
+            if(items[i] == item){
+                let singleItem = document.createElement("div")
+                singleItem.className = "detail"
+                singleItem.innerHTML = 
+                `<button onclick="start()">Back</button>
+                    <div>
+                        <h2>${items[i].name}</h2>
+                        <img src="${items[i].image}"/>
+                        <p>${items[i].description}</p>
+                        <div>${items[i].price}</div>
+                    </div>
+                    <button onclick="addToCart()">Add to cart</button>
+                    <button onclick="shoppingCart()">Go to cart</button>`
+                ;
+                detailedView.appendChild(singleItem)
+
+            }
+        }
+    }
+       
+    </script>
+
+</body>
+</html>

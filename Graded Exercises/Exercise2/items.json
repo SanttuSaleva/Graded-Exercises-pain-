@@ -1,0 +1,54 @@
+[
+    {
+        "name": "Mad Cap Mushroom",
+        "price": 100,
+        "image": "https://image.shutterstock.com/image-vector/agaricus-campestris-all-elements-separate-600w-403997965.jpg"
+
+    },
+    {
+        "name": "LSD",
+        "price": 500,
+        "image": "https://image.shutterstock.com/image-photo/psychedelic-drug-lsd-therapy-research-600w-1775700806.jpg"
+
+    },
+    {
+        "name": "Penicillin",
+        "price": 55,
+        "image": "https://image.shutterstock.com/image-photo/new-york-usa-april-18-600w-1958065291.jpg"
+
+    },
+    {
+        "name": "Ketamine",
+        "price": 1000,
+        "image": "https://image.shutterstock.com/image-photo/vial-vaccine-drug-powder-on-600w-1524354695.jpg"
+
+    },
+    {
+        "name": "Paracetamol",
+        "price": 500,
+        "image": "https://image.shutterstock.com/image-photo/paracetamol-known-acetaminophen-pill-medication-600w-1839229021.jpg"
+
+    },
+    {
+        "name": "Mysterious Medicine",
+        "price": 10,
+        "image": "https://image.shutterstock.com/image-photo/group-pills-hand-medicine-concept-600w-1926317507.jpg"
+
+    },
+    {
+        "name": "Even More Mysterious Medicine",
+        "price": 11,
+        "image": "https://image.shutterstock.com/image-photo/colorful-pills-medicines-hand-600w-672632047.jpg"
+
+    },
+    {
+        "name": "Tears of Coding Students",
+        "price": 15,
+        "image": "https://image.shutterstock.com/image-vector/realistic-water-drops-3d-transparent-600w-1341327572.jpg"
+    },
+    {
+        "name":"Simple English, with a dash of thoughts",
+        "price": 0,
+        "image": "https://image.shutterstock.com/image-vector/english-open-book-language-hand-600w-1191427996.jpg"
+    }
+]
