@@ -216,7 +216,7 @@ async function gameLoop() {
       //again check the space that the player is initialActionChoices
       playersChamber = dungeon.playersChamber()
       let attackableCharacters = playersChamber.characters.map(function(character) {
-        let object = { title: character.name, value: character}
+        let object = { title: characterName, value: character}
         return object
       })
 
